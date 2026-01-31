@@ -12,13 +12,27 @@ body {
     color: var(--french-blue);
 }
 
+::selection {
+    background: var(--persimmon);
+    color: var(--periwinkle);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #FF0099;
+    color: #EEE;
+    text-shadow: none;
+}
+
 section.hero {
-    padding-top: 30vh;
+    padding-top: 20vh;
+    padding-bottom: 100px;
     background-color: var(--french-blue);
     color: var(--periwinkle);
     width: 100%;
     max-width: none;
     min-height: 100vh;
+    margin-top: 0;
 }
 
 div.hero-wrapper {
@@ -34,16 +48,46 @@ div.hero-wrapper h5 {
     font-size: 20px;
     letter-spacing: 2px;
     text-align: justify;
+    margin-bottom: 0px;
+}
+
+div.hero-wrapper h2 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 40px;
+}
+
+div.hero-wrapper div.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
     margin-bottom: 30px;
+}
+
+div.hero-wrapper div.flex div.line {
+    background-color: var(--persimmon);
+    height: 1px;
+    width: 60%;
+    margin-top: 0;
 }
 
 h1 {
     font-family: "Roboto";
     font-weight: 100;
-    font-size: 6em;
+    font-size: 6.5em;
     letter-spacing: -0.5vw;
     line-height: 0.9;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--persimmon);
 }
+
+/* h1 span.persimmon {
+    color: var(--persimmon);
+    display: inline-block;
+} */
 
 section {
     margin: 0 auto;
@@ -65,7 +109,7 @@ section p a {
     border-bottom: 1px solid var(--persimmon);
 }
 
-section p span.bold {
+span.bold {
     font-weight: 900;
 }
 
@@ -105,8 +149,19 @@ div.flex-grade {
 @media only screen and (min-width: 700px) {
     h1 {
         font-size: 12.25em;
+        border-bottom: 2px solid var(--persimmon);
     }
     section.hero {
         padding-top: 15vh;
+    }
+    div.hero-wrapper h5 {
+        font-size: 25px;
+    }
+    div.hero-wrapper div.flex div.line {
+        width: 75%;
+        height: 1.5px;
+    }
+    div.hero-wrapper h2 {
+        font-size: 24px;
     }
 }
