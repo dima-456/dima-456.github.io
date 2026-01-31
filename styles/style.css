@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --persimmon: #F65009;
+  --periwinkle: #EBF2FF;
+  --french-blue: #3D3B8E;
+  --yellow: #FABB3D;
+}
+
+body {
+    background: var(--periwinkle);
+    color: var(--french-blue);
+}
+
+section.hero {
+    padding-top: 30vh;
+    background-color: var(--french-blue);
+    color: var(--periwinkle);
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+}
+
+div.hero-wrapper {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 85%;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+}
+
+div.hero-wrapper h5 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 6em;
+    letter-spacing: -0.5vw;
+    line-height: 0.9;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 85%;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+div.title {
+    font-weight: 600;
+}
+
+section p a {
+    color: var(--persimmon);
+    text-decoration: none;
+    border-bottom: 1px solid var(--persimmon);
+}
+
+section p span.bold {
+    font-weight: 900;
+}
+
+section p span.semibold {
+    font-weight: 600;
+}
+
+section div {
+    margin-top: 50px;
+}
+
+section h5 {
+    font-family: 'Roboto';
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--persimmon);
+}
+
+div.row {
+    border-bottom: 1px solid var(--persimmon);
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+div.row p {
+    margin-bottom: 0;
+}
+
+div.flex-grade {
+    margin-top: 0px;
+}
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 12.25em;
+    }
+    section.hero {
+        padding-top: 15vh;
+    }
+}
