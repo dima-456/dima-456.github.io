@@ -66,6 +66,30 @@ div.hero-wrapper div.flex {
     margin-bottom: 30px;
 }
 
+footer {
+    background: var(--persimmon);
+    color: var(--periwinkle);
+    width: 100%;
+    padding-bottom: 5%;
+    margin-top: 100px;
+}
+
+footer div.flex {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    padding-top: 1em;
+}
+
+footer div.flex h5 {
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
 div.hero-wrapper div.flex div.line {
     background-color: var(--persimmon);
     height: 1px;
@@ -106,7 +130,23 @@ div.title {
 section p a {
     color: var(--persimmon);
     text-decoration: none;
-    border-bottom: 1px solid var(--persimmon);
+    font-weight: 400;
+    display: inline-block;
+    box-shadow: inset 0em -1px var(--persimmon);
+    transition: 1s all;
+}
+
+section.weekly p a {
+    display: inline;
+    padding: 5px 10px;
+    box-shadow: none;
+    border: 1px solid var(--persimmon)
+}
+
+section p a:hover {
+    /* color: var(--periwinkle); */
+    transition: 1s all;
+    box-shadow: inset 0em -0.2em var(--persimmon);
 }
 
 span.bold {
@@ -146,6 +186,21 @@ div.flex-grade {
     margin-top: 0px;
 }
 
+div.list p {
+    position: relative;
+}
+
+div.list p a {
+    display: inline;
+}
+
+div.list p:before {
+    content: '•';
+    position: absolute;
+    left: -15px;
+    top: 0px;
+}
+
 @media only screen and (min-width: 700px) {
     h1 {
         font-size: 12.25em;
@@ -163,5 +218,14 @@ div.flex-grade {
     }
     div.hero-wrapper h2 {
         font-size: 24px;
+    }
+    footer {
+        width: 100%;
+        padding-bottom: 1%;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    footer div.flex {
+        width: 95%;
     }
 }
